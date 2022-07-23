@@ -1,4 +1,3 @@
-const { resolveSoa } = require('dns');
 const { Thought, User } = require('../models')
 
 const thoughtController = {
