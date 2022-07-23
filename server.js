@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.use(require('./routes'));
+app.use(require('./routes/api'));
 
 db.once('open', () => {
     app.listen(PORT, () => {
